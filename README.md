@@ -9,6 +9,11 @@ These scripts will clone a copy of the given Git repository, both as regular clo
 
 Please note that since this script creates three copies of the repository, it may consume a lot of disk space.
 
+## Example repositories
+You can test these tools on the following two example repositories:
+  * [gb_testrepo_delete](https://github.com/nightwatchcybersecurity/gb_testrepo_delete) - repository hiding secrets via deleted commits
+  * [gb_testrepo_reset](https://github.com/nightwatchcybersecurity/gb_testrepo_reset) - repository hiding secrets via "git reset"
+
 ## Requirements
 You will need [Git](https://git-scm.com/), [Python 3](https://www.python.org/). [GitLeaks](https://github.com/zricethezav/gitleaks) and [git-filter-repo](https://github.com/newren/git-filter-repo) to be installed. Here is an example of installing these on MacOS:
 ```
