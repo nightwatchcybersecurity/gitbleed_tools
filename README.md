@@ -27,6 +27,13 @@ git clone https://github.com/nightwatchcybersecurity/gitbleed_tools.git
 cd gitbleed_tools
 ./gitbleed.sh https://github.com/nightwatchcybersecurity/gitbleed_tools.git example
 ```
+
+There are also some helper scripts that can be used to scan GitHub and GitLab repositories as follows:
+```
+./gitbleed_gh.sh nightwatchcybersecurity/gitbleed_tools
+./gitbleed_gl.sh nwcs/junit_ui_bug
+```
+
 This will create an example folder containing three subfolders:
    * clone - contains the cloned repository
    * delta - contains the mirrrored repository minus all of the commits in the "clone"
