@@ -2,7 +2,7 @@
 
 # GitBleed Tools - for extracting data from mirrorred git repositories
 ## About
-This repo contains shell scripts that can be used to download and analyze differences between cloned and mirror Git repositories. For more information about the underlying quirk in Git behavior, please visit [read our blog post](TBD).
+This repo contains shell scripts that can be used to download and analyze differences between cloned and mirror Git repositories. For more information about the underlying quirk in Git behavior, please visit [read our blog post](https://wwws.nightwatchcybersecurity.com/2022/02/11/gitbleed/).
 
 ## What Do These Scripts Do? 
 These scripts will clone a copy of the given Git repository, both as regular clone and mirrored ("--mirror") option. It will then create a delta between the two, seeking to find the parts of the repository that are only available in mirror mode. Last, gitleaks will be run to see if any secrets are present in the delta portion, and "git log" will be used to create a single file containing the bodies of the commits so they can be analyzed easier.
